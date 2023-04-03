@@ -6,6 +6,16 @@ to install these tools.
 
 ## Mac Installation
 
+_You can install PSQL Command Line Tools using Homebrew, OR through an installer. Choose ONE approach below._
+
+### Mac Option A: Using Homebrew
+
+Open your terminal, and run `brew install libpq`.
+
+Read the output provided in the terminal. You will be instructed to run commands which will add the location of your PSQL command line tools to your path. Run each command as instructed.
+
+### Mac Option B: Using the EDB Installer
+
 Navigate to the [PostgresQL Downloads] page and click on the icon for the Mac
 download (latest version). Follow the instructions on the installer. You can
 choose the default options on each screen except the "Select Components" screen.
@@ -13,10 +23,11 @@ On that page, select only the "Command Line Tools" option.
 
 ![psql-mac]
 
-When installation is complete, follow the instructions below to interact with
-your Render database using the PSQL Command Line Tools.
-
 _See the [Mac Installation Documentation] for more details or troubleshooting._
+
+When installation is complete (either approach), follow the instructions below
+to interact with your Render database using the PSQL Command Line Tools.
+
 
 ## Windows Installation through WSL
 

@@ -4,14 +4,14 @@
   "description": "",
   "main": "server/app.js",
   "scripts": {
+    "build": "npm run --prefix server build",
     "install": "npm install --prefix server",
-    "test": "NODE_ENV=test mocha --timeout 10000",
-    "test-with-json": "NODE_ENV=test mocha --reporter json --timeout 10000",
     "reset-files": "node test/utils/reset-files.js",
     "sequelize": "npm run --prefix server sequelize",
     "sequelize-cli": "npm run --prefix server sequelize-cli",
     "start": "npm start --prefix server",
-    "build": "npm run --prefix server build"
+    "test": "NODE_ENV=test mocha --timeout 10000",
+    "test-with-json": "NODE_ENV=test mocha --reporter json --timeout 10000"
   },
   "keywords": [],
   "author": "",

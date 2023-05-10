@@ -64,7 +64,7 @@ define these in our models when we initiate the class.
 
 However, Sequelize also makes assumptions based on provided information to
 determine any values that are NOT explicitly defined. In `belongsToMany`
-associations, for example, if we do not explicitly define the foreign keys two
+associations, for example, if we do not explicitly define the foreign keys of two
 instances being associated, then Sequelize will assume that the names are
 PascalCased (`InstrumentId`), because it will just add "Id" to the end of the
 model name "Instrument".
@@ -72,7 +72,7 @@ model name "Instrument".
 Similar to Sequelize, SQLite3 also makes assumptions. SQLite3 will automatically
 lowercase any schema, table, and column names. Therefore, in development with
 the SQLite3 database, `InstrumentId` is automatically lowercased to
-`instrumentId`. This matches the casing of the column name that was explicitly
+`instrumentid`. This matches the casing of the column name that was explicitly
 defined in the `MusicianInstrument` table, and allows the table to seed
 successfully.
 
@@ -113,6 +113,9 @@ passing all tests with your changes.
 Finally, test your changes by simulating the production environment.
 
 Change the value of `NODE_ENV` in the __.env__ file back to `production`.
+
+You will also need to recreate the `DATABASE_URL` environment variable.  Set
+the Render database instance's External URL as the value.
 
 Follow the commands summarized in the __2-setup-commands-postgres.md__ file to
 implement the schema, migrate tables, and seed data in the PostgresQL database.

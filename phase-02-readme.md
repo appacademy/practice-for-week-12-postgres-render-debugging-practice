@@ -29,9 +29,6 @@ Executing (default): CREATE SCHEMA IF NOT EXISTS test_schema;
 If you do not see the output above, then check your __.env__ file to make
 sure you entered the key-value pair for the `DATABASE_URL` properly.
 
-If you do not see the output above, then check your __.env__ file to make
-sure you entered the key-value pair for the `DATABASE_URL` properly.
-
 2. Run migration files
 
 `npx dotenv sequelize db:migrate`

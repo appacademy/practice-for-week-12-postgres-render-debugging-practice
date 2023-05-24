@@ -1,18 +1,37 @@
 # Install PSQL Command Line Tools
 
 [PostgreSQL] Command Line Tools allow you to examine and interact with the
-contents of your PostgresQL database. Follow the Mac or Windows instructions below
-to install these tools.
+contents of your PostgresQL database.
+
+- **If you already have PostgresQL** or PSQL Command Line Tools installed, then
+  skip the installation instructions below and continue with the "Interacting
+  with your Database (All)" section.
+- **If you are not sure** if you have PostgresQL or PSQL Command Line Tools
+  installed, then open a terminal and enter `psql`.
+
+  - *If you recieve an error message*, this means you need to install the PSQL
+    Command Line Tools. Close your terminal and continue with the installation
+    instructions below.
+
+  - *If you see a new PSQL command prompt* after entering `psql`, then that
+    means you already have the tools you need and you should not install
+    anything else. Type `Control-d` to exit out of the PSQL Command Line Tools,
+    and continue with the "Interacting with your Database (All)" section.
+
+Follow the Mac or Windows instructions below to install these tools.
 
 ## Mac Installation
 
-_You can install PSQL Command Line Tools using Homebrew, OR through an installer. Choose ONE approach below._
+_You can install PSQL Command Line Tools using Homebrew, OR through an
+installer. Choose ONE approach below._
 
 ### Mac Option A: Using Homebrew
 
 Open your terminal, and run `brew install libpq`.
 
-Read the output provided in the terminal. You will be instructed to run commands which will add the location of your PSQL command line tools to your path. Run each command as instructed.
+Read the output provided in the terminal. You will be instructed to run commands
+which will add the location of your PSQL command line tools to your path. Run
+each command as instructed.
 
 ### Mac Option B: Using the EDB Installer
 

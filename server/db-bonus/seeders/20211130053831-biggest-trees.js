@@ -50,7 +50,9 @@ module.exports = {
      * }], {});
     */
     options.tableName = 'Trees';
-    await queryInterface.bulkInsert(options, trees);
+    options.validate = true;
+    const { Tree } = require('../models')
+    await Tree.bulkCreate(trees, options)
   },
 
   down: async (queryInterface, Sequelize) => {

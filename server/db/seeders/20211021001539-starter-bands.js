@@ -27,7 +27,9 @@ module.exports = {
      * }], {});
     */
     options.tableName = 'Bands';
-    await queryInterface.bulkInsert(options, bands)
+    options.validate = true;
+    const { Band } = require('../models')
+    await Band.bulkCreate(bands, options)
   },
 
   down: async (queryInterface, Sequelize) => {

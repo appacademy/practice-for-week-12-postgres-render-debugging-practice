@@ -30,9 +30,7 @@ module.exports = {
      * }], {});
     */
     options.tableName = 'Instruments';
-    options.validate = true;
-    const {  Instrument } = require('../models')
-    await Instrument.bulkCreate(instruments, options)
+    await queryInterface.bulkInsert(options, instruments)
   },
 
   down: async (queryInterface, Sequelize) => {

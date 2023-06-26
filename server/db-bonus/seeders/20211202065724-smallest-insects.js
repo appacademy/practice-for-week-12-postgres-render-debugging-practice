@@ -34,9 +34,7 @@ module.exports = {
      * }], {});
     */
     options.tableName = 'Insects';
-    options.validate = true;
-    const { Insect } = require('../models')
-    await Insect.bulkCreate(insects, options)
+    await queryInterface.bulkInsert(options, insects);
   },
 
   down: async (queryInterface, Sequelize) => {
